@@ -5,5 +5,5 @@
 ## Prerequisites
 
 ## Lab tutorial
-### Create Your VPC
+
 
