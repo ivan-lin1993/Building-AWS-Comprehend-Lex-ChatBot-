@@ -15,14 +15,14 @@ This experiment will teach you how to build a your own ChatBot and use lambda fu
 
 ### Create a lambda function
 1.  Open the Lambda console.
-2.  Choose Create Function.
-3.  Choose Author from scratch.
-4.  For Runtime, choose Python 3.6.
-5.  For Role, choose Create a custom role. The custom execution role allows the function to detect sentiments, create a log group, stream log events, and store the log events.
+2.  Choose **Create Function**.
+3.  Choose **Author from scratch**.
+4.  For Runtime, choose **Python 3.6**.
+5.  For Role, choose **Create a custom role**. The custom execution role allows the function to detect sentiments, create a log group, stream log events, and store the log events.
 6.  Enter the following values:
-7.  For Role Description, enter Lambda execution role permissions.
-8.  For IAM Role, choose Create an IAM role.
-9.  For Role Name, enter LexSentimentAnalysisLambdaRole.
+7.  For **Role Description**, enter Lambda execution role permissions.
+8.  For **IAM Role**, choose **Create an IAM role**.
+9.  For **Role Name**, enter **LexLambdaRole**.
 10. For Policy, use the following policy:
 
 * AmazonLexFullAccess
@@ -30,8 +30,8 @@ This experiment will teach you how to build a your own ChatBot and use lambda fu
 * CloudWatchLogsFullAccess
 * ComprehendFullAccess
 
-
 11. paste the script in this tutorial
+
 
 ### Set up Lex bot
 1. In console, type Lex service
