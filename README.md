@@ -15,6 +15,7 @@ This lab have two part, one for lambda creating and one for Lex Chatbot building
 2.  Choose **Create Function**.
 3.  Choose **Author from scratch**.
 4.  For Runtime, choose **Python 3.6**.
+
 ![1.png](/Lex_img/1.png)
 
 
@@ -22,6 +23,7 @@ This lab have two part, one for lambda creating and one for Lex Chatbot building
 *  For **Role Description**, enter Lambda execution role permissions.
 *  For **IAM Role**, choose **Create a new IAM Role**.
 *  For **Role Name**, enter **myLexLambdaRole**.
+
 ![2.png](/Lex_img/2.png)
 
 *  For **Policy**, **Edit** it and use the following policy:
@@ -92,16 +94,19 @@ This lab have two part, one for lambda creating and one for Lex Chatbot building
 
 4. Click **Create**.   
 5. Click **Create intent** and type the intent name as **lambda_bot_intent**.
+
 ![4.png](/Lex_img/4.png)
 
 
 6. Add some sample utterances. (ex. good, bad) 
+
 ![5.png](/Lex_img/5.png)
 
 7. In **Fulfillment**, click **AWS Lambda function** and choose the lambda function you've created.
 8. It will show the notification to add permission to lambda function, click OK.
 9. Click **Bulid**.
 10. After build your Chatbot, click **Test** to type some sentence and make sure it work. (ex. This service is too bad to use!)
+
 ![6.png](/Lex_img/6.png)
 
 
