@@ -21,15 +21,12 @@ This experiment will teach you how to build a your own ChatBot and use lambda fu
 9.  For **Role Name**, enter **myLexLambdaRole**.
 10. For Policy, edit it and use the following policy:
 
-
-
-
 11. Click **Allow**
 12. Go back to Create function page and choose the role you just create and click **Create function**.
 13. 
 12. Paste the script in this github
 
-                {
+        {
           "Version": "2012-10-17",
           "Statement": [{
               "Effect": "Allow",
@@ -81,22 +78,19 @@ This experiment will teach you how to build a your own ChatBot and use lambda fu
 
 ### Set up Lex bot
 1. In console, type Lex service
-
 2. Click **create**.
-
 3. Click **Custom bot** and set following content:
 * Type Bot name as **lambda_bot**
 * Choose the Output voice **None**
 * Set the **Session timeout**
 * In COPPA check **Yes**
-  then, **Create**   
-
-4. Create intent and type the intent name as **lambda_bot_intent**
-5. Add some utterances.(eg. fine, bad) 
-6. In Fulfillment, click **AWS Lambda function** and choose 
-7. It will show the notification to add permission to lambda function, click ok.
-8. Click **Bulid**.
-9. After builded your Chatbot, click **Test** to type some sentense and make sure it work. (eg. Everything will be good)
+4. Click **Create**   
+5. Create intent and type the intent name as **lambda_bot_intent**
+6. Add some utterances.(eg. fine, bad) 
+7. In Fulfillment, click **AWS Lambda function** and choose 
+8. It will show the notification to add permission to lambda function, click ok.
+9. Click **Bulid**.
+10. After builded your Chatbot, click **Test** to type some sentense and make sure it work. (eg. Everything will be good)
 
 ### Conclusion
 * Now you learn how to build your own Lex chatbot
