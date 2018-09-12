@@ -89,6 +89,7 @@ This lab have two part, one for lambda creating and one for Lex Chatbot building
 * Choose the Output voice **None**.
 * Set the **Session timeout**.
 * In COPPA, check **Yes**.
+
 ![3.png](/Lex_img/3.png)
 
 
