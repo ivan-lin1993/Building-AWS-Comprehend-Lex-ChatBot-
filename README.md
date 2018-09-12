@@ -9,10 +9,6 @@ This experiment will teach you how to build a your own ChatBot and use lambda fu
 
 ## Lab tutorial
 
-### Create IAM role
-
-
-
 ### Create a lambda function
 1.  Open the Lambda console.
 2.  Choose **Create Function**.
@@ -101,4 +97,7 @@ This experiment will teach you how to build a your own ChatBot and use lambda fu
 7. It will show the notification to add permission to lambda function, click ok.
 8. Click **Bulid**.
 9. After builded your Chatbot, click **Test** to type some sentense and make sure it work. (eg. Everything will be good)
+
+### Conclusion
+* Now you learn how to build your own Lex chatbot
 
