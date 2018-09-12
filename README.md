@@ -96,7 +96,6 @@ This lab have two part, one for lambda creating and one for Lex Chatbot building
 
 
 6. Add some sample utterances. (ex. good, bad) 
-![Alt text](./1536743218132.png)
 ![5.png](/Lex_img/5.png)
 
 7. In **Fulfillment**, click **AWS Lambda function** and choose the lambda function you've created.
@@ -109,5 +108,4 @@ This lab have two part, one for lambda creating and one for Lex Chatbot building
 
 ### Conclusion
 * Now you learn how to build your serverless Lex chatbot with sentiment analysis function.
-* 
 
