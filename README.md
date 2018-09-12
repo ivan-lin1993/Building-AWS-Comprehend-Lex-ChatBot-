@@ -21,17 +21,67 @@ This experiment will teach you how to build a your own ChatBot and use lambda fu
 5.  For Role, choose **Create a custom role**. The custom execution role allows the function to detect sentiments, create a log group, stream log events, and store the log events.
 6.  Enter the following values:
 7.  For **Role Description**, enter Lambda execution role permissions.
-8.  For **IAM Role**, choose **Create an IAM role**.
-9.  For **Role Name**, enter **LexLambdaRole**.
-10. For Policy, use the following policy:
+8.  For **IAM Role**, choose **Create a new IAM Role**.
+9.  For **Role Name**, enter **myLexLambdaRole**.
+10. For Policy, edit it and use the following policy:
 
-* AmazonLexFullAccess
-* TranslateReadOnly
-* CloudWatchLogsFullAccess
-* ComprehendFullAccess
 
-11. paste the script in this tutorial
 
+
+11. Click **Allow**
+12. Go back to Create function page and choose the role you just create and click **Create function**.
+13. 
+12. Paste the script in this github
+
+                {
+          "Version": "2012-10-17",
+          "Statement": [{
+              "Effect": "Allow",
+              "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+              ],
+              "Resource": "arn:aws:logs:*:*:*"
+            },
+            {
+              "Action": [
+                "comprehend:DetectDominantLanguage",
+                "comprehend:DetectSentiment"
+              ],
+              "Effect": "Allow",
+              "Resource": "*"
+            },
+            {
+              "Effect": "Allow",
+              "Action": [
+                "cloudwatch:GetMetricStatistics",
+                "cloudwatch:DescribeAlarms",
+                "cloudwatch:DescribeAlarmsForMetric",
+                "kms:DescribeKey",
+                "kms:ListAliases",
+                "lambda:GetPolicy",
+                "lambda:ListFunctions",
+                "lex:*",
+                "polly:DescribeVoices",
+                "polly:SynthesizeSpeech"
+              ],
+              "Resource": [
+                "*"
+              ]
+            },
+            {
+                "Action": [
+                  "translate:TranslateText",
+                  "comprehend:DetectDominantLanguage",
+                  "cloudwatch:GetMetricStatistics"
+                ],
+                "Effect": "Allow",
+                "Resource": "*"
+              }
+
+          ]
+        }
 
 ### Set up Lex bot
 1. In console, type Lex service
