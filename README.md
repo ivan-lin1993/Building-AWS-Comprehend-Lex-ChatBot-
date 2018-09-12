@@ -1,30 +1,29 @@
 ## Building-AWS-Comprehend-Lex-ChatBot
 
-## Scenario
-This experiment will teach you how to build a your own ChatBot and use lambda functions to connect AWS Comprehend and AWS Translation services.
+### Scenario
+This experiment will teach you how to build a your own serverless ChatBot and use lambda functions to connect AWS Comprehend and AWS Translation services.
 
-## Prerequisites
+### Prerequisites
 * Sign-in a AWS account, and make sure you have select N.Virginia region.
-* Download source file from this github.
+* Download source file from this Github.
 
-## Lab tutorial
+### Lab tutorial
+This lab have two part, one for lambda creating and one for Lex Chatbot building.
 
 ### Create a lambda function
-1.  Open the Lambda console.
+1.  Open the Lambda in console.
 2.  Choose **Create Function**.
 3.  Choose **Author from scratch**.
 4.  For Runtime, choose **Python 3.6**.
-5.  For Role, choose **Create a custom role**. The custom execution role allows the function to detect sentiments, create a log group, stream log events, and store the log events.
-6.  Enter the following values:
-7.  For **Role Description**, enter Lambda execution role permissions.
-8.  For **IAM Role**, choose **Create a new IAM Role**.
-9.  For **Role Name**, enter **myLexLambdaRole**.
-10. For Policy, edit it and use the following policy:
+![Alt text](./1536743033502.png)
 
-11. Click **Allow**
-12. Go back to Create function page and choose the role you just create and click **Create function**.
-13. 
-12. Paste the script in this github
+5.  For Role, choose **Create a custom role** and set following information:
+*  For **Role Description**, enter Lambda execution role permissions.
+*  For **IAM Role**, choose **Create a new IAM Role**.
+*  For **Role Name**, enter **myLexLambdaRole**.
+![Alt text](./1536743068583.png)
+
+*  For **Policy**, **Edit** it and use the following policy:
 
         {
           "Version": "2012-10-17",
@@ -75,23 +74,35 @@ This experiment will teach you how to build a your own ChatBot and use lambda fu
 
           ]
         }
+6. Click **Allow**.
+7. Go back to Create function page and choose the role you just create and click **Create function**.
+8. Paste the lambda script in this Github.
 
-### Set up Lex bot
-1. In console, type Lex service
+### Set up Lex Chatbot
+1. In AWS console, select Lex service.
 2. Click **create**.
 3. Click **Custom bot** and set following content:
-* Type Bot name as **lambda_bot**
-* Choose the Output voice **None**
-* Set the **Session timeout**
-* In COPPA check **Yes**
-4. Click **Create**   
-5. Create intent and type the intent name as **lambda_bot_intent**
-6. Add some utterances.(eg. fine, bad) 
-7. In Fulfillment, click **AWS Lambda function** and choose 
-8. It will show the notification to add permission to lambda function, click ok.
+* Type Bot name as **lambda_bot**.
+* Choose the Output voice **None**.
+* Set the **Session timeout**.
+* In COPPA, check **Yes**.
+![Alt text](./1536743156524.png)
+
+4. Click **Create**.   
+5. Click **Create intent** and type the intent name as **lambda_bot_intent**.
+![Alt text](./1536743178045.png)
+
+6. Add some sample utterances. (ex. good, bad) 
+![Alt text](./1536743218132.png)
+
+7. In **Fulfillment**, click **AWS Lambda function** and choose the lambda function you've created.
+8. It will show the notification to add permission to lambda function, click OK.
 9. Click **Bulid**.
-10. After builded your Chatbot, click **Test** to type some sentense and make sure it work. (eg. Everything will be good)
+10. After build your Chatbot, click **Test** to type some sentence and make sure it work. (ex. This service is too bad to use!)
+![Alt text](./1536743204185.png)
+
 
 ### Conclusion
-* Now you learn how to build your own Lex chatbot
+* Now you learn how to build your serverless Lex chatbot with sentiment analysis function.
+* 
 
