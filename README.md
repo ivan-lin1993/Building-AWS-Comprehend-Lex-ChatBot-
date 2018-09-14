@@ -1,17 +1,17 @@
 ## Building-AWS-Comprehend-Lex-ChatBot
 
 ### Scenario
-This experiment will teach you how to build a your own serverless ChatBot and use lambda functions to connect AWS Comprehend and AWS Translation services.
+This experiment will teach you how to build your own serverless ChatBot and use lambda functions to connect AWS Comprehend and AWS Translation services.
 
 ### Prerequisites
-* Sign-in a AWS account, and make sure you have select N.Virginia region.
+* Sign-in an AWS account, and make sure you have select N.Virginia region.
 * Download source file from this Github.
 
 ### Lab tutorial
-This lab have two part, one for lambda creating and one for Lex Chatbot building.
+This lab has two part, one for lambda creating and one for Lex Chatbot building.
 
 ### Create a lambda function
-1.  Open the Lambda in console.
+1.  Open the Lambda in the console.
 2.  Choose **Create Function**.
 3.  Choose **Author from scratch**.
 4.  For Runtime, choose **Python 3.6**.
@@ -105,8 +105,8 @@ This lab have two part, one for lambda creating and one for Lex Chatbot building
 
 7. In **Fulfillment**, click **AWS Lambda function** and choose the lambda function you've created.
 8. It will show the notification to add permission to lambda function, click OK.
-9. Click **Bulid**.
-10. After build your Chatbot, click **Test** to type some sentence and make sure it work. (ex. This service is too bad to use!)
+9. Click **Build**.
+10. After building your Chatbot, click **Test** to type some sentence and make sure it works. (ex. This service is too bad to use!)
 
 ![6.png](/Lex_img/6.png)
 
