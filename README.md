@@ -1,15 +1,18 @@
 ## Building-AWS-Comprehend-Lex-ChatBot
 
-### Scenario
-This experiment will teach you how to build your own serverless ChatBot and use lambda functions to connect AWS Comprehend and AWS Translation services.
+## Scenario
 
-### Prerequisites
+Chatbot can be used in many fields and more humanly helping people to automate the triggering of target events. However, the chatbot with emotional analysis can give different answers to users' input and can record information about interactions with users to further optimize the service.
+This experiment will teach you how to build your own serverless ChatBot and use lambda functions to connect Amazon Comprehend and Amazon Translation services. 
+
+## Prerequisites
 * Sign-in an AWS account, and make sure you have select N.Virginia region.
 * Download source file from this Github.
 
-### Lab tutorial
+## Lab tutorial
 This lab has two part, one for lambda creating and one for Lex Chatbot building.
 
+---
 ### Create a lambda function
 1.  Open the Lambda in the console.
 2.  Choose **Create Function**.
@@ -78,9 +81,10 @@ This lab has two part, one for lambda creating and one for Lex Chatbot building.
           ]
         }
 6. Click **Allow**.
-7. Go back to Create function page and choose the role you just create and click **Create function**.
-8. Paste the lambda script in this Github.
+7. Go back to Create function page and choose the role you just created and click **Create function**.
+8. Paste the [lambda script](https://github.com/JellalYu/Building-AWS-Comprehend-Lex-ChatBot-/blob/master/chatbot.py) in this Github.
 
+---
 ### Set up Lex Chatbot
 1. In AWS console, select Lex service.
 2. Click **create**.
@@ -111,7 +115,8 @@ This lab has two part, one for lambda creating and one for Lex Chatbot building.
 ![6.png](/Lex_img/6.png)
 
 
-
+---
 ### Conclusion
 * Now you learn how to build your serverless Lex chatbot with sentiment analysis function.
+* This architecture can be combined with more APIs for AWS services, please give it a try.
 
