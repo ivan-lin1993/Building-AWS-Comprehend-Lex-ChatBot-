@@ -103,12 +103,12 @@ This lab has two part, one for lambda creating and one for Lex Chatbot building.
 ![4.png](/Lex_img/4.png)
 
 
-6. Add some sample utterances. (ex. good, bad) 
+6. Add some sample utterances. This allows lex to capture your answers based on these keywords. (ex. good, bad) 
 
 ![5.png](/Lex_img/5.png)
 
 7. In **Fulfillment**, click **AWS Lambda function** and choose the lambda function you've created.
-8. It will show the notification to add permission to lambda function, click OK.
+8. It will show the notification to add permission to lambda function, click **OK**.
 9. Click **Build**.
 10. After building your Chatbot, click **Test** to type some sentence and make sure it works. (ex. This service is too bad to use!)
 
